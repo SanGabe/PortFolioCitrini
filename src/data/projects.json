@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Projeto Exemplo",
+        "description": "Breve descrição do projeto e tecnologias usadas.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "link": "https://link-para-o-projeto.com"
+    },
+    {
+        "title": "Outro Projeto",
+        "description": "Descrição do outro projeto e suas tecnologias.",
+        "technologies": ["React", "Node.js"],
+        "link": "https://link-para-outro-projeto.com"
+    }
+]

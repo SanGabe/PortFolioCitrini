@@ -1,0 +1,89 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.brand {
+    font-size: 2em;
+    margin: 0;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects {
+    margin: 20px 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.site-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
