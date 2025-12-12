@@ -10,32 +10,9 @@ O projeto possui a seguinte estrutura de arquivos:
 
 - `index.html`: Arquivo principal da aplicação, contendo a estrutura HTML do portfólio.
 - `styles.css`: Regras de estilo CSS para o portfólio.
-- `script.js`: Funcionalidades interativas da página.
 - `README.md`: Documentação do projeto.
-- `.gitignore`: Arquivos e pastas a serem ignorados pelo Git.
-- `package.json`: Configuração do npm, listando dependências e scripts.
-- `src/components/project-card.html`: Template HTML para os cartões de projeto.
-- `src/data/projects.json`: Dados sobre os projetos em formato JSON.
-- `src/utils/dom.js`: Funções utilitárias para manipulação do DOM.
-- `public/fonts/inter.css`: Regras de estilo para a fonte "Inter".
 
-## Como Executar o Projeto
-
-1. Clone o repositório:
-   ```
-   git clone <URL do repositório>
-   ```
-
-2. Navegue até o diretório do projeto:
-   ```
-   cd portfolio-gabriel-citrini
-   ```
-
-3. Instale as dependências (se houver):
-   ```
-   npm install
-   ```
-
+2
 4. Abra o arquivo `index.html` em um navegador para visualizar o portfólio.
 
 ## Tecnologias Utilizadas
