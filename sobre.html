@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gabriel Citrini — Engenheiro de Software</title>
-    <meta name="description" content="Portfólio de Gabriel Citrini — Desenvolvedor Full Stack e Engenheiro de Software em formação.">
+    <title>Sobre — Gabriel Citrini</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,8 +13,8 @@
             <a href="index.html" class="logo">GC</a>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
                     <li><a href="formacao.html">Formação</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -26,13 +25,40 @@
 
     <main>
         <div class="container">
-            <section class="hero">
-                <h1>Olá, sou <span class="accent">Gabriel Citrini</span></h1>
-                <h2 style="font-weight: 400; margin-top: -1rem; color: #8892b0;">Engenheiro de Software em Formação</h2>
-                <p>Sou um desenvolvedor apaixonado por criar experiências digitais acessíveis e de alta qualidade. Atualmente estudo Engenharia de Software e tenho experiência com desenvolvimento web full stack. Sempre buscando aprender novas tecnologias e enfrentar desafios interessantes.</p>
-                <div style="margin-top: 2rem;">
-                    <a href="sobre.html" class="cta-button">Saiba mais sobre mim</a>
-                    <a href="portfolio.html" class="cta-button">Ver meus projetos</a>
+            <section class="about">
+                <h2>
+                    <span class="section-number">01.</span>
+                    Sobre Mim
+                </h2>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Meu nome é <strong>Gabriel Citrini</strong>, tenho 22 anos e sou estudante de Engenharia de Software na UNINTER.</p> 
+                            <p>Sou natural de <strong>São Lourenço do Sul - RS</strong> e atualmente resido em <strong>Juazeiro - BA</strong>
+                            apaixonado por tecnologia e desenvolvimento de software. Gosto de enfrentar desafios técnicos 
+                            e aprender novas tecnologias. Meus interesses incluem desenvolvimento back-end, desenvovimento de jogos 
+                            e metodologia ágil.
+                        </p> 
+                        <p>
+                            Nos meus tempos livres, você me encontra jogando, escutando música, assistindo animes ou 
+                            explorando as tendências mais recentes do mundo da tecnologia.
+                        </p>
+                        <p>
+                            Meu objetivo profissional é ser um desenvolvedor versátil, com conhecimentos em diferentes tecnologias, 
+                            contribuindo para projetos que impactem positivamente a vida das pessoas.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Habilidades</h3>
+                        <ul class="skills-list">
+                            <li>C/C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -40,12 +66,12 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="ano"></span> Gabriel Citrini</p>
+            <p>&copy; <span id="ano"></span>Gabriel Citrini</p>
             <div class="social-footer">
                 <a href="https://github.com/SanGabe" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
-                <a href="https://linkedin.com/in/gabecitrini/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/gabecitrini" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
                 </a>
                 <a href="https://x.com/GabeCitrini" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
@@ -57,8 +83,6 @@
 
     <script>
         document.getElementById('ano').textContent = new Date().getFullYear();
-        
-        // Marca o link ativo baseado na página atual
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
         document.querySelectorAll('nav a').forEach(link => {
             if (link.getAttribute('href') === currentPage) {
